@@ -2,7 +2,5 @@ environment:
   language: ruby
 
 build:
-  info: ls
   run:
-    - bundle install --no-deployment -j 4
-    - bundle exec rake
+    - ls -a
