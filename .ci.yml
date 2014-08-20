@@ -3,9 +3,7 @@ environment:
   language: ruby
 
 build:
-  before:
-    - apt-get -y install git libxml2-dev libxslt-dev libcurl4-openssl-dev libpq-dev libsqlite3-dev build-essential libreadline-dev
-    - gem install bundler
-    - bundle install --no-deployment -j 4
   run:
+    - ls
+    - bundle install --no-deployment -j 4
     - bundle exec rake
