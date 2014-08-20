@@ -6,4 +6,5 @@ build:
     - cd /tmp/stringer
     - bundle install --no-deployment -j 4
   run:
+    - ls -ls /tmp/**/*
     - bundle exec rake
