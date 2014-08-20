@@ -1,10 +1,11 @@
 environment:
+  image: 'paintedfox/ruby'
   language: ruby
 
 build:
   before:
-    - cd /tmp/stringer
+    - apt-get -y install git libxml2-dev libxslt-dev libcurl4-openssl-dev libpq-dev libsqlite3-dev build-essential libreadline-dev
+    - gem install bundler
     - bundle install --no-deployment -j 4
   run:
-    - ls -ls /**/*
     - bundle exec rake
