@@ -1,7 +1,3 @@
-environment:
-  language: ruby
-  language_versions: 2.0.0
-
 build:
   before:
     - gem install bundler
