@@ -3,5 +3,8 @@ environment:
   language_versions: 2.0.0
 
 build:
+  before:
+    - gem install bundler
+    - bundle install --no-deployment -j 4
   run:
-    unit: echo hello
+    - bundle exec rake
