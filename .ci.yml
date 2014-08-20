@@ -3,4 +3,5 @@ environment:
 
 build:
   run:
+    - cd /var/project
     - ls -a
