@@ -19,6 +19,7 @@ group :development, :test do
   gem "rspec", "~> 2.14", ">= 2.14.1"
   gem "rspec-html-matchers", "~> 0.4.3"
   gem "shotgun", "~> 0.9.0"
+  gem "sqlite3", "~> 1.3", ">= 1.3.8"
 end
 
 gem "activerecord", "~> 4.0"
