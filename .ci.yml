@@ -4,4 +4,5 @@ environment:
 
 build:
   run:
+    - bundle install --no-deployment -j 4
     - bundle exec rake
