@@ -4,8 +4,7 @@ environment:
 
 build:
   before:
-    - apt-get -y install git
-    - gem install bundler
+    - cd /tmp/stringer
     - bundle install --no-deployment -j 4
   run:
     - bundle exec rake
