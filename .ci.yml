@@ -4,7 +4,7 @@ environment:
 
 build:
   before:
-    - echo hi
+    - apt-get install git
     - gem install bundler
     - bundle install --no-deployment -j 4
   run:
