@@ -1,9 +1,11 @@
 environment:
+  image: 'paintedfox/ruby'
   language: ruby
 
 build:
   before:
     - echo hi
-  run:
+    - gem install bundler
     - bundle install --no-deployment -j 4
+  run:
     - bundle exec rake
