@@ -1,5 +1,4 @@
 environment:
-  image: 'paintedfox/ruby'
   language: ruby
 
 build:
