@@ -1,0 +1,7 @@
+environment:
+  language: ruby
+  language_versions: 2.0.0
+
+build:
+  run:
+    unit: echo hello
