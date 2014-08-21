@@ -1,5 +1,7 @@
 environment:
   image: 'localhost:5000/stringer'
+  language: 'ruby'
+  language_versions: '2.0.0'
 
 build:
   before:
