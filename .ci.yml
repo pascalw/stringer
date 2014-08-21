@@ -1,6 +1,9 @@
+environment:
+  image: 'localhost:5000/stringer'
+
 build:
-  test:
-    - echo hi
-  run:
+  before:
     - bundle install --no-deployment -j 4
+
+  run:
     - bundle exec rake
