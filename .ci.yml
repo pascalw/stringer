@@ -1,5 +1,5 @@
 environment:
-  image: 'stringer'
+  image: '5a2f69e15981'
   language: ruby
 
 build:
