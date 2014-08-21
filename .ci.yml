@@ -1,5 +1,5 @@
 build:
-  before:
+  test:
     - echo hi
   run:
     - bundle install --no-deployment -j 4
