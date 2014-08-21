@@ -6,10 +6,6 @@ group :production do
   gem "unicorn", "~> 4.7"
 end
 
-group :development do
-  gem "sqlite3", "~> 1.3", ">= 1.3.8"
-end
-
 group :development, :test do
   gem "coveralls", "~> 0.7", require: false
   gem "faker", "~> 1.2"
