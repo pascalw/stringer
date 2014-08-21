@@ -1,6 +1,3 @@
-environment:
-  language: ruby
-
 build:
   before:
     - echo hi
