@@ -1,7 +1,8 @@
 environment:
+  image: 'stringer'
   language: ruby
 
 build:
   run:
-    - cd /var/project
-    - ls -a
+    - bundle install --no-deployment -j 4
+    - bundle exec rake
