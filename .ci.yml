@@ -5,7 +5,7 @@ environment:
 
 build:
   before:
-    - bundle install --no-deployment -j 4 --path /mnt/\$(echo \$GIT_URL | sed 's/.*:\(.*\)\.git/\1/')
+    - bundle install --no-deployment -j 4 --path /mnt/${JOB_NAME}
 
   run:
     - bundle exec rake
